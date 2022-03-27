@@ -1,0 +1,14 @@
+starlette
+aiofiles
+uvicorn
+eventlet
+python-socketio
+aiohttp
+opencv-python
+torch
+torchvision
+pandas
+numpy
+imutils
+Pillow
+python-dotenv

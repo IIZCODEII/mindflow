@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title >MindFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../static/index.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <script src="../static/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-streaming@2.0.0"></script>
+
+</head>
+
+<body id="t" class="offline">
+
+<div><img id="logo" src="./static/mindflow.png"></div>
+
+
+<div class="container">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-md-7"><img id ="image"></div>
+    <div class="col-6 col-md-5">    
+    <div class="row">
+        <div class="card border-secondary mb-3" style="max-width: 60rem;" >
+            <canvas id="liveChart"></canvas>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="row row-cols-4">
+                <div class="col">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Neutral</div>
+                        <div class="card-body text-secondary">
+                        <p class="card-text" id ="liveNeutral" >No Data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Happy</div>
+                        <div class="card-body text-secondary">
+                        <p class="card-text" id ="liveHappy" >No Data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Sad</div>
+                        <div class="card-body text-secondary">
+                        <p class="card-text" id ="liveSad">No Data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Surprise</div>
+                        <div class="card-body text-secondary">
+                        <p class="card-text" id ="liveSurprise">No Data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Fear</div>
+                        <div class="card-body text-secondary">
+                        <p class="card-text" id ="liveFear">No Data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Disgust</div>
+                        <div class="card-body text-secondary">
+                        <p class="card-text" id ="liveDisgust">No Data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Anger</div>
+                        <div class="card-body text-secondary">
+                        <p class="card-text" id ="liveAnger" >No Data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Contempt</div>
+                        <div class="card-body text-secondary">
+                        <p class="card-text" id ="liveContempt">No Data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+  </div>
+  <div class="row" id="statistics">
+    <div class="col-sm">
+        <div class="card border-secondary mb-3" style="max-width: 30rem;" >
+            <canvas id="radarChart"></canvas>
+        </div>           
+    </div>
+
+    <div class="col-sm">
+         <div class="card border-secondary mb-3" style="max-width: 30rem;" >
+         <canvas id="doughnutChart"></canvas>
+     </div>           
+    </div>
+    </div>
+    
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../static/mind_flow.js"></script>
+</body>
+ 
+</html>
