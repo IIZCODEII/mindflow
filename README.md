@@ -9,7 +9,7 @@ Dans cette visée d'être le plus utile et pratique possible, nous avons oriente
 
 ## Concept et UI
 
-![UI](img_notebook/mindflow_ui.png)
+![haar](img_notebook/mindflow_ui.png)
 
 La figure ci-dessus met en évidence l'interface utilisateur qui est née de cette recherche. Elle met en avant la necessité de ne pas se contenter des prédictions du modèle de reconnaissance et de restituer des statististiques *live* et sur l'ensemble de la session permettant de pointer vers un pré-diagnostic ( par exemple profil emotionel de la personne sur la session, part des émotions négatives etc).
 
@@ -22,7 +22,7 @@ C'est avec ces contraintes en tête que nous avons articuler conceptuelement les
 
 ## Workflow
 
-![conceptual_wf](img_notebook/video_feed_workflow.png)
+![haar](img_notebook/video_feed_workflow.png)
 
 ### Face Detection Algorithm : Haar-Viola-Jones
 
@@ -47,7 +47,7 @@ En particulier, l'algorithme de Haar-Viola-Jones permet de traiter au moins 15 i
 
 ## Face Emotion Recognition Model
 
-![iter](img_notebook/iter_fer.png)
+![haar](img_notebook/iter_fer.png)
 
 Deux notebooks disctincts présent dans le dépot décrivent notre approche pour les deux itérations effectuées sur le modèle de FER.
 
@@ -62,7 +62,7 @@ Les distributions sont différentes ( problème des datasets crowdsourcé/scrapp
 
 ## Workflow logiciel
 
-![iter](img_notebook/wf_mind.png)
+![haar](img_notebook/wf_mind.png)
 
 ## Lancer le projet
 
